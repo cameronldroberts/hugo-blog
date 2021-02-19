@@ -1,0 +1,83 @@
+baseurl = "http://www.cameronroberts.dev"
+title = "Cameron Roberts"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+paginate = 20
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+  author = "Cameron Roberts"
+  info = "Software Engineer enjoying all things Cloud and IoT"
+  description = "Personal site"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/icon.jpeg"
+  #gravatar = "john.doe@example.com"
+  
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+  
+  footercontent = "enter"
+  hideFooter = true
+  hideCredits = true
+  hideCopyright = true
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+  
+  customCSS = ["css/style.css"]
+#   customSCSS = ["scss/custom.scss"]
+#   customJS = ["js/custom.js"]
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/cameronldroberts/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 2
+  url = "https://twitter.com/cameron_1010/"
+# [[params.social]]
+#     name = "LinkedIn"
+#     icon = "fa fa-linkedin"
+#     weight = 3
+#     url = "https://www.linkedin.com/in/johndoe/"
+[[params.social]]
+    name = "Medium"
+    icon = "fa fa-medium"
+    weight = 4
+    url = "https://medium.com/@cameronldroberts"
+[[params.social]]
+    name = "Devto"
+    icon = "fa fa-dev-to"
+    weight = 5
+    url = "https://dev.to/cameronldroberts"
+
+# Menu links
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+  
+[[menu.main]]
+  name = "Blog"
+  weight = 2
+  url  = "posts/"
+[[menu.main]]
+  name = "Contact"
+  weight = 3
+  url  = "contact/"

@@ -1,0 +1,32 @@
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    color: inherit;
+    border: 1px solid #ccc; 
+    background-color: inherit;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+
+  .form-container {
+    border-radius: 5px;
+    background-color: inherit;
+    background: inherit;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
