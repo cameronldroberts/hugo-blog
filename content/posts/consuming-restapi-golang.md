@@ -4,7 +4,7 @@ date: 2021-01-30
 title: Consuming a REST API using Golang
 description: Consuming a REST API using Golang 
 tags: ["Golang", "REST", "API", "Go"]
-canonical_url: "www.cameronroberts.dev/blog/consuming-restapi-golang"
+canonical_url: "www.cameronroberts.dev/posts/consuming-restapi-golang"
 ---
 
 This post will talk about how to consume a REST API using Go. We will go through steps to setup the Go project, Go Modules used and how we run the code.
