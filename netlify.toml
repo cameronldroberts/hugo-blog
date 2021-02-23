@@ -1,7 +1,7 @@
 [build]
 publish = "public"
 command = "make build"
-functions = "netlify/functions"
+functions = "netlify/functions/"
 
 [context.production.environment]
 HUGO_VERSION = "0.81.0"
