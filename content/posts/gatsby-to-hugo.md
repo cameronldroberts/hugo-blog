@@ -1,5 +1,4 @@
 +++ 
-draft = true
 date = 2021-02-19T16:25:04Z
 title = "Gatsby to Hugo"
 description = "Moving from Gatsby to Hugo "
@@ -7,7 +6,7 @@ slug = "gatsby-to-hugo"
 authors = []
 tags = ["gatsby", "hugo" , "go" , "blog", "static"]
 categories = []
-externalLink = ""
+externalLink = "https://www.cameronroberts.dev/posts/gatsby-to-hugo/"
 series = []
 +++
 
@@ -18,12 +17,12 @@ Some cool features of Hugo
 - It's lightning fast
 - The list of available themes is huge and you can also roll your own
   
-### Starting the move 
+## Starting the move 
 
 My site is pretty small and so it shouldn't be too difficult to move. Both render posts form markdown so there's no need to do any converting.
 
-### Setting up the Hugo site
-#### Installation
+## Setting up the Hugo site
+### Installation
 
 ```bash
 brew install hugo
@@ -35,7 +34,7 @@ If Hugo has installed correctly we should see the following output
 Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown
 ```
 
-#### Create a new site
+### Create a new site
 
 ```bash
 hugo new site hugo-blog
@@ -43,7 +42,7 @@ hugo new site hugo-blog
 
 This will create a Hugo site in the current directory. 
 
-#### Adding a theme
+### Adding a theme
 
 There's a huge selection of different themes available which can be found on the [themes webpage](https://themes.gohugo.io/). I have chosen to use the [hugo coder theme](https://github.com/luizdepra/hugo-coder) thanks to the developers over there for a great theme!
 
@@ -139,7 +138,7 @@ pygmentscodefencesguesssyntax = true
 ```
 You will need to change some values such as social links, avatarUrl, title and anything else that points to my site. 
 
-#### Adding content
+### Adding content
 
 Now that we have the plumbing sorted we can start adding some content. If you have an old site you want to bring your content from then you can do that quite easily. The markdown files live in `content/posts` so you could just copy them over 
 
@@ -245,7 +244,7 @@ git remote add origin https://github.com/cameronldroberts/hugo-blog.git
 git push -u origin main
 ```
 
-Github usually provides you with the steps when you create a new repo but I'll include them incase you can't find them. If you follow the steps above make sure you change the remote origin to your repository. Be sure to know what you're committing into your repository when using `git add -A` as you could quite easily check in an API key or sensitive information when using it (should be fine for our first drop of code with the blog). I usually use the VSCode Source control tab as it gives a nice way to compare changes. 
+Github usually provides you with the steps when you create a new repo but I'll include them incase you can't find them. If you follow the steps above make sure you change the remote origin to your repository. Be sure to know what you're committing into your repository when using `git add -A` as you could quite easily check in an API key or sensitive information when using it (should be fine for our first drop of code with the blog). I usually use the VSCode source control tab as it gives a nice way to compare changes. 
 
 ### Deploying to Netlify 
 
@@ -320,12 +319,12 @@ Google have provided a pretty cool site which you can use to measure overall per
 | SEO            | 100       | SEO            | 100       |
 
 
-According to the tool the Hugo site outperforms the Gatsby one. In defense of the Gatsby site there's a few bits of code in there that I have written to test things out and never finished them or have a few TODO items left so it may not be completely fair race. Having said that the Gatsby site despite being slightly neglected is not performing too badly.
+According to the tool the Hugo site outperforms the Gatsby one. In defence of the Gatsby site there's a few bits of code in there that I have written to test things out and never finished them or have a few TODO items left so it may not be completely fair race. Having said that the Gatsby site despite being slightly neglected is not performing too badly.
 
 
 Thanks for reading and I hope you enjoyed the post!
 
 
-#### Reading list
+## Reading list
 - https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
 - https://gohugo.io/getting-started/quick-start/
