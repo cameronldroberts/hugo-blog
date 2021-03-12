@@ -48,11 +48,11 @@ pygmentscodefencesguesssyntax = true
   icon = "fa fa-twitter fa-2x"
   weight = 2
   url = "https://twitter.com/cameron_1010/"
-# [[params.social]]
-#     name = "LinkedIn"
-#     icon = "fa fa-linkedin"
-#     weight = 3
-#     url = "https://www.linkedin.com/in/johndoe/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/cldr/"
 [[params.social]]
     name = "Medium"
     icon = "fa fa-medium"

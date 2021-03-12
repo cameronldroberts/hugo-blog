@@ -11,6 +11,7 @@ This post will talk about how to consume a REST API using Go. We will go through
 
 ### Prerequisites
 - Valid Golang installation
+  
 If you need instructions on how to install it this is a good place to [start](https://golang.org/doc/install)
 
 ### Introduction
@@ -52,6 +53,13 @@ This in an example response that we get from the API when calling it. As we know
 
 ### Struct 
 The struct is fairly basic so in this instance it wouldn't be too much work to map from JSON to the struct below.
+```
+type Response struct {
+ ID     string `json:"id"`
+ Joke   string `json:"joke"`
+ Status int    `json:"status"`
+}
+```
 
 In the event that we have a much larger JSON response this can become quite a time consuming process. Not to worry as there's a useful tool called 
 [JSON-to-Go](https://medium.com/r/?url=https%3A%2F%2Fmholt.github.io%2Fjson-to-go%2F) which handles the conversion.

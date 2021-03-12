@@ -10,7 +10,7 @@ externalLink = "https://www.cameronroberts.dev/posts/gatsby-to-hugo/"
 series = []
 +++
 
-I recently decided that I would be moving my personal site from Gatsby to Hugo. I quite enjoyed using Gatbsy so I'm not moving due to poor experience but more that I have wanted to give Hugo a try for a while and figured this would be the best project to use it with.
+I recently decided that I would be moving my personal site from Gatsby to Hugo. I quite enjoyed using Gatsby so I'm not moving due to poor experience but more that I have wanted to give Hugo a try for a while and figured this would be the best project to use it with.
 
 Some cool features of Hugo
 - It's written in Go! (No Golang programming knowledge required for creating sites with Hugo)
@@ -152,7 +152,8 @@ On my Gatsby site the posts could be found under `/blog` like this
 https://cameronroberts.dev/blog/consuming-restapi-golang/
 ```
 
-whereas on the Hugo site they will be found under `/posts` like this 
+whereas on the Hugo site they will be found under `/posts` like this
+ 
 ```
 https://cameronroberts.dev/posts/consuming-restapi-golang/
 ```
@@ -228,7 +229,7 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-If all goes well then your console output should look something like the output above. At this point we can navigate to `http://localhost:1313/` and see our site. There may need to be a few tweaks here and there where the content is referencing myself or socials. You may have missed something in the `config.toml` if so but a quick find+replace will do the trick. 
+If all goes well then your console output should look something like the output above. At this point we can navigate to `http://localhost:1313/` and see our site. You may need make a few tweaks here and there where the content is referencing myself or my socials. You may have missed something in the `config.toml` if so,  but a quick find+replace will do the trick. 
 
 ### Push to Github
 
@@ -244,15 +245,15 @@ git remote add origin https://github.com/cameronldroberts/hugo-blog.git
 git push -u origin main
 ```
 
-Github usually provides you with the steps when you create a new repo but I'll include them incase you can't find them. If you follow the steps above make sure you change the remote origin to your repository. Be sure to know what you're committing into your repository when using `git add -A` as you could quite easily check in an API key or sensitive information when using it (should be fine for our first drop of code with the blog). I usually use the VSCode source control tab as it gives a nice way to compare changes. 
+Github usually provides you with the steps when you create a new repo but I'll include them incase you can't find them. If you follow the steps above make sure you change the remote origin to your repository. Be sure to know what you're committing into your repository when using `git add -A` as you could quite easily check in an API key or sensitive information when using it (should be fine for our first drop of code with the blog). I usually use the VSCode Source control tab as it gives a nice way to compare changes. 
 
 ### Deploying to Netlify 
 
 My original Gatsby site was deployed to Netlify and I decided to stick with the platform as it just makes it all so easy. We are going to use Github as this is where I host my code but it is possible to use others such as Bitbucket and GitLab although the steps may deviate slightly. 
 
-If you haven't already got a Netlify account you can sign up [here](https://app.netlify.com/). This will ask you to authorize with Github as it will require access to the repo you want to deploy.
+If you haven't already got a Netlify account you can sign up [here](https://app.netlify.com/). This will ask you to authorise with Github as it will require access to the repo you want to deploy.
 
-Once you have authorized Netlify navigate to the "sites" page and click the `New site from Git` button. This will popup a wizard for you to follow to create a new website referencing a Github repo of your choice. Pick the repository that you just pushed your site to. I chose hugo-blog as this is where I pushed my code. The next page will ask for a few bits of information such as Owner and Branch which are usually auto populated with the correct values. In my project they are `cameronldroberts's team` and `main`. For the `Basic build settings` you have two options 
+Once you have authorised Netlify navigate to the "sites" page and click the `New site from Git` button. This will popup a wizard for you to follow to create a new website referencing a Github repo of your choice. Pick the repository that you just pushed your site to. I chose hugo-blog as this is where I pushed my code. The next page will ask for a few bits of information such as Owner and Branch which are usually auto populated with the correct values. In my project they are `cameronldroberts's team` and `main`. For the `Basic build settings` you have two options 
 
 option 1) Fill out the required information with your required build command `hugo` and publish directory `public`. Depending on the theme used you may need to specify a minimum version build command
 
@@ -301,7 +302,7 @@ Once the config file has reached our Github repo hit `Deploy site`. Netlify will
 #### Some debugging tips if it doesn't quite go to plan 
 
 - Check the Netlify logs it will usually point out the errors it is struggling with
-- If you chose option 1 and didn't use the netlify config file then make sure you are using at least the minimum version of Hugo that your theme requires
+- If you chose option 1 and didn't use the Netlify config file then make sure you are using at least the minimum version of Hugo that your theme requires
 
 ### Custom domain
 Whilst the urls generated by Netlify are completely free and great whilst in dev, if you're creating a proper site I would imagine that you would like to add your own. You can buy a domain through Netlify and by doing this they will configure DNS and provision a wildcard certificate. I bought my domain prior to making the original site so never got one through Netlify. I can imagine this would be the easiest way to add a custom domain to a Netlify site but it isn't too difficult to do so when your domain is purchased elsewhere. You also have the option to use the Netlify DNS and let them handle everything. I think this may be slightly out of scope for this post but if you want to read up on how you can do it then [this document is good place to start](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/)
@@ -324,6 +325,7 @@ According to the tool the Hugo site outperforms the Gatsby one. In defence of th
 
 Thanks for reading and I hope you enjoyed the post!
 
+https://www.cameronroberts.dev/
 
 ## Reading list
 - https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
